@@ -25,7 +25,6 @@ import Entities from './components/Entities.vue';
 
 const entitiesStore = useEntitiesStore();
 watch(entitiesStore.entities, (e) => {
-  console.log('a', e);
   localStorage.setItem('entities', JSON.stringify(e));
 });
 </script>
